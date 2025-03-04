@@ -1,0 +1,63 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+.accordion {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.accordion-item {
+    border-bottom: 1px solid #ddd;
+}
+
+.accordion-header {
+    position: relative;
+    padding: 15px;
+    background: #f9f9f9;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.accordion-header:hover {
+    background-color: #e0e0e0;
+}
+
+.accordion-header.active {
+    background-color: #cce0ff;
+}
+
+.accordion-body {
+    padding: 15px;
+    display: none;
+    border-top: 1px solid #ddd;
+}
+
+.accordion-body.show {
+    display: block;
+}
+
+.icon {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: transform 0.3s;
+}
+
+.icon.rotate {
+    transform: translateY(-50%) rotate(180deg);
+}
+
+.accordion-body strong {
+    font-weight: bold;
+}
+
+.accordion-body .code {
+    color: #d6336c;
+    font-family: monospace;
+}
